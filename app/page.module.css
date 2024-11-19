@@ -1,0 +1,174 @@
+.appContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  }
+  
+  .grid {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .spaceY10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .appInput {
+    width: 100%;
+    max-width: 24rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1.5rem;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+    margin-bottom: 1.5rem;
+  }
+  
+  .appInput:focus {
+    border-color: #3498db;
+  }
+  
+  .buttonContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    background-color: rgba(41, 128, 185, 0.7);
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    max-width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgba(41, 128, 185, 1);
+  }
+  
+  .ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+  
+  .li {
+    background-color: #2d3a4b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 24rem;
+    margin-bottom: 1rem;
+  }
+  
+  .li:hover {
+    background-color: #34495e;
+  }
+  
+  .li .inline-block {
+    width: 16rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  button.bgYellow {
+    background-color: rgba(241, 196, 15, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  button.bgYellow:hover {
+    background-color: rgba(241, 196, 15, 0.8);
+  }
+  
+  @media (max-width: 1024px) {
+    .appInput {
+      width: 20rem;
+    }
+  
+    .button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+    }
+  
+    .li {
+      width: 20rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .appContainer {
+      padding: 1rem;
+    }
+  
+    .appInput {
+      width: 100%;
+      font-size: 1.1rem;
+      padding: 0.75rem;
+    }
+  
+    .button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  
+    .li {
+      width: 100%;
+    }
+  
+    .grid {
+      padding: 1rem;
+    }
+  
+    .spaceY10 {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appInput {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+  
+    .li {
+      width: 100%;
+    }
+  }
